@@ -480,12 +480,17 @@
 
   /* ============ RESPONSIVE ============ */
   @media (max-width:900px) {
+    body { cursor:auto; }
+    #cur, #cur-ring { display:none; }
+    a, button { cursor:pointer; }
     nav { padding:1rem 1.5rem; }
     .nav-links { display:none; }
     .hero-content { padding:0 1.5rem 4rem; }
     .hero-content h1 { font-size:clamp(2.5rem,10vw,4rem); letter-spacing:-1px; }
     .scroll-hero { height:100vh; }
     .scroll-hero-sticky { position:relative; }
+    .scroll-hint { display:none; }
+    .progress-bar { display:none; }
     .services, .process, .about, .gallery, .contact { padding:5rem 1.5rem; }
     .services-grid, .process-grid { grid-template-columns:1fr; }
     .gallery-grid { grid-template-columns:1fr 1fr; }
