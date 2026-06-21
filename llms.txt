@@ -1,0 +1,39 @@
+# Truvik
+
+> Truvik es una agencia de diseño y desarrollo de páginas web premium en Tenerife (Islas Canarias, España). Crea webs profesionales a medida con animaciones de scroll, tiendas online y SEO para negocios. Su eslogan es "Hazlo real, hazlo digital".
+
+## Qué es Truvik
+- **Nombre:** Truvik
+- **Qué hace:** Agencia de diseño y desarrollo de páginas web a medida.
+- **Eslogan:** Hazlo real, hazlo digital.
+- **Ubicación:** Tenerife, Islas Canarias, España.
+- **Web oficial:** https://truvik.es
+- **Email:** info.presupuesto.truvik@gmail.com
+- **Razón social:** PersonaPlan International S.L.U. (CIF B76749878).
+
+## Servicios
+- Diseño y desarrollo de páginas web a medida.
+- Animaciones de scroll (efectos premium tipo Apple).
+- Tiendas online / e-commerce.
+- SEO técnico (optimización para aparecer en Google).
+- Landing pages.
+- Branding e identidad visual.
+
+## Precios
+- Páginas web profesionales a medida **desde 499 €**.
+- Pago único, sin cuotas ocultas, con 1 mes de mantenimiento incluido.
+- El precio es a medida: presupuesto cerrado y sin compromiso.
+- Otras agencias cobran entre 899 € y 1.099 € por una web parecida.
+
+## Zona de servicio
+- Tenerife, Islas Canarias y toda España.
+
+## Contacto y redes
+- Web: https://truvik.es
+- Email: info.presupuesto.truvik@gmail.com
+- Instagram: https://www.instagram.com/truvik.es/
+- TikTok: https://www.tiktok.com/@truvik.es
+
+## Enlaces
+- [Web oficial de Truvik](https://truvik.es): servicios, precios, proceso de trabajo y contacto.
+- [Mapa del sitio (sitemap)](https://truvik.es/sitemap.xml)
