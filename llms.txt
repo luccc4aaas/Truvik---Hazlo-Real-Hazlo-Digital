@@ -1,0 +1,46 @@
+# Truvik
+
+> Truvik, en Tenerife (Islas Canarias, España), hace dos cosas para negocios: páginas web premium a medida (con animaciones de scroll, tiendas online y SEO) y asistentes de IA que atienden a sus clientes: ChatVik por WhatsApp y CallVik por teléfono. Su eslogan es "Hazlo real, hazlo digital".
+
+## Qué es Truvik
+- **Nombre:** Truvik
+- **Qué hace:** Páginas web a medida y asistentes de IA para negocios (WhatsApp y llamadas).
+- **Eslogan:** Hazlo real, hazlo digital.
+- **Ubicación:** Tenerife, Islas Canarias, España.
+- **Web oficial:** https://truvik.es
+- **Email:** info.presupuesto.truvik@gmail.com
+- **Razón social:** PersonaPlan International S.L.U. (CIF B76749878).
+
+## Servicios
+- Diseño y desarrollo de páginas web a medida.
+- Animaciones de scroll (efectos premium tipo Apple).
+- Tiendas online / e-commerce.
+- SEO técnico (optimización para aparecer en Google).
+- Landing pages.
+- Branding e identidad visual.
+
+## Asistentes de IA
+- **ChatVik** (https://truvik.es/chatvik/): asistente de IA en el WhatsApp del negocio. Responde 24/7, entiende notas de voz y fotos, contesta también con nota de voz, habla español, inglés y alemán y reserva citas en Google Calendar. El dueño puede pausarlo y contestar él. **499 €/mes** (sin IGIC), con demo gratis antes de contratar.
+- **CallVik** (https://truvik.es/callvik/): asistente de IA que contesta las llamadas que el negocio no puede coger, resuelve dudas y agenda citas, sin cambiar de número. **En lista de espera.** 499 €/mes (sin IGIC).
+- **Pack ChatVik + CallVik:** 749 €/mes en vez de 998 €.
+
+## Precios de las webs
+- Páginas web profesionales a medida **desde 499 €**.
+- Pago único, sin cuotas ocultas, con 1 mes de mantenimiento incluido.
+- El precio es a medida: presupuesto cerrado y sin compromiso.
+- Otras agencias cobran entre 899 € y 1.099 € por una web parecida.
+
+## Zona de servicio
+- Tenerife, Islas Canarias y toda España.
+
+## Contacto y redes
+- Web: https://truvik.es
+- Email: info.presupuesto.truvik@gmail.com
+- Instagram: https://www.instagram.com/truvik.es/
+- TikTok: https://www.tiktok.com/@truvik.es
+
+## Enlaces
+- [Web oficial de Truvik](https://truvik.es): servicios, precios, proceso de trabajo y contacto.
+- [ChatVik](https://truvik.es/chatvik/): asistente de IA para WhatsApp.
+- [CallVik](https://truvik.es/callvik/): asistente de IA para llamadas.
+- [Mapa del sitio (sitemap)](https://truvik.es/sitemap.xml)

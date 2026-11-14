@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com https://vik.lucas-scheil.workers.dev; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Página propia de CallVik. Los precios y las preguntas de aquí deben
+         coincidir con src/i18n/translations.ts (productos.callvik). -->
+    <title>CallVik — Asistente de IA que contesta las llamadas de tu negocio | Truvik</title>
+    <meta name="description" content="CallVik es un asistente de IA que contesta las llamadas de tu negocio cuando tú no puedes, resuelve dudas y agenda citas. Lista de espera abierta. 499 €/mes, o 749 €/mes junto con ChatVik." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://truvik.es/callvik/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Truvik" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="https://truvik.es/callvik/" />
+    <meta property="og:title" content="CallVik — Asistente de IA que contesta las llamadas de tu negocio | Truvik" />
+    <meta property="og:description" content="CallVik es un asistente de IA que contesta las llamadas de tu negocio cuando tú no puedes, resuelve dudas y agenda citas. Lista de espera abierta. 499 €/mes, o 749 €/mes junto con ChatVik." />
+    <meta property="og:image" content="https://truvik.es/callvik-logo.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Icons & manifest -->
+    <link rel="icon" href="/favicon.ico?v=5" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=5" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=5" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts: Clash Display (Fontshare, licencia libre) + Inter de respaldo (SIL OFL).
+         Las DOS se sirven desde /fonts (ver src/index.css). Ni Google ni Fontshare:
+         así la IP del visitante no sale a terceros antes de aceptar nada.
+         Precargamos los pesos que se ven primero para que no parpadee el titular. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-display-700.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-display-600.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://truvik.es/callvik/#service",
+      "name": "CallVik",
+      "serviceType": "Asistente de IA para llamadas",
+      "description": "CallVik es un asistente de IA que contesta las llamadas de tu negocio cuando tú no puedes, resuelve dudas y agenda citas. Lista de espera abierta. 499 €/mes, o 749 €/mes junto con ChatVik.",
+      "url": "https://truvik.es/callvik/",
+      "image": "https://truvik.es/callvik-logo.png",
+      "provider": {
+        "@id": "https://truvik.es/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Tenerife"
+        },
+        {
+          "@type": "Place",
+          "name": "Islas Canarias"
+        },
+        {
+          "@type": "Country",
+          "name": "España"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "499",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/PreOrder",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "499",
+          "priceCurrency": "EUR",
+          "unitCode": "MON",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://truvik.es/#organization",
+      "name": "Truvik",
+      "url": "https://truvik.es/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://truvik.es/callvik/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿CallVik ya está disponible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todavía no: está en lista de espera. Déjanos tus datos y te avisamos en cuanto abramos plazas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto costará?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "499 € al mes (sin IGIC). Y si lo quieres junto con ChatVik, el pack de WhatsApp y llamadas sale por 749 € al mes en vez de 998 €."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tengo que cambiar mi número de teléfono?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La IA solo entra si no contestas a los pocos segundos. Si tú coges el teléfono, todo sigue igual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se nota que es una IA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Habla con naturalidad, pero siempre avisa de que es un asistente de IA: lo exige la ley europea y es lo honesto con tus clientes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Truvik",
+          "item": "https://truvik.es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "CallVik",
+          "item": "https://truvik.es/callvik/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <style>
+      .sin-js{max-width:640px;margin:0 auto;padding:48px 20px;font:16px/1.6 system-ui,sans-serif;color:#fff;background:#0a0a0a;opacity:0;animation:sin-js-aparece .3s 1.5s forwards}
+      .sin-js h1{font-size:34px;font-weight:800;letter-spacing:-.025em;line-height:1.1;margin:0 0 16px}.sin-js h2{font-size:20px;font-weight:700;margin:28px 0 8px}.sin-js ul{list-style:disc;padding-left:20px}.sin-js p{margin:0 0 8px}.sin-js dt{font-weight:700;margin-top:12px}.sin-js dd{margin:0}.sin-js strong{color:#ff2020}.sin-js a{color:#fff}
+      @keyframes sin-js-aparece{to{opacity:1}}
+    </style>
+    <script type="module" crossorigin src="/assets/index-x_QGB13B.js"></script>
+    <script type="module" crossorigin src="/assets/producto-BCPUxh4o.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CTTNYA4h.css">
+  </head>
+  <body data-producto="callvik">
+    <div id="root">
+      <!-- Texto fijo para quien lee el HTML sin JavaScript (Gemini, ChatGPT, Bing…).
+           React lo sustituye al arrancar. Ver index.html. -->
+      <main class="sin-js">
+        <p><a href="/">Truvik</a> · Páginas web y asistentes de IA en Tenerife</p>
+        <h1>CallVik — Asistente de IA para las llamadas de tu negocio</h1>
+        <p><strong>Lista de espera.</strong></p>
+        <p>CallVik es un asistente de IA que contesta las llamadas de tu negocio, resuelve dudas y agenda citas — aunque no puedas coger el teléfono. Sigues con tu número de siempre. Ahora mismo está en lista de espera.</p>
+        <h2>Precio</h2>
+        <p><strong>499 € al mes</strong> (sin IGIC). Junto con ChatVik: 749 €/mes en vez de 998 €.</p>
+        <ul>
+          <li>Contesta las llamadas que no puedas coger</li>
+          <li>Agenda citas sola</li>
+          <li>Sigues con tu número de siempre</li>
+          <li>Atiende 24/7</li>
+        </ul>
+        <h2>Preguntas frecuentes</h2>
+        <dl>
+          <dt>¿CallVik ya está disponible?</dt><dd>Todavía no: está en lista de espera. Déjanos tus datos y te avisamos en cuanto abramos plazas.</dd>
+          <dt>¿Cuánto costará?</dt><dd>499 € al mes (sin IGIC). Y si lo quieres junto con ChatVik, el pack de WhatsApp y llamadas sale por 749 € al mes en vez de 998 €.</dd>
+          <dt>¿Tengo que cambiar mi número de teléfono?</dt><dd>No. La IA solo entra si no contestas a los pocos segundos. Si tú coges el teléfono, todo sigue igual.</dd>
+          <dt>¿Se nota que es una IA?</dt><dd>Habla con naturalidad, pero siempre avisa de que es un asistente de IA: lo exige la ley europea y es lo honesto con tus clientes.</dd>
+        </dl>
+        <h2>Contacto</h2>
+        <p>Puerto de la Cruz, Tenerife · <a href="mailto:info.presupuesto.truvik@gmail.com">info.presupuesto.truvik@gmail.com</a></p>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404 — Truvik</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.ico">
+<style>
+  @font-face{font-family:"Clash Display";src:url("/fonts/clash-display-500.woff2") format("woff2");font-weight:500;font-display:swap}
+  @font-face{font-family:"Clash Display";src:url("/fonts/clash-display-600.woff2") format("woff2");font-weight:600;font-display:swap}
+  @font-face{font-family:"Clash Display";src:url("/fonts/clash-display-700.woff2") format("woff2");font-weight:700;font-display:swap}
+  @font-face{font-family:"Inter";src:url("/fonts/inter-latin.woff2") format("woff2");font-weight:400 700;font-display:swap}
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  html{background:#000;overscroll-behavior:none;-webkit-text-size-adjust:100%}
+  body{
+    background:#000;color:#fff;overflow:hidden;position:relative;
+    font-family:"Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+    /* la barra del navegador del móvil crece y encoge: dvh la sigue */
+    height:100dvh;
+    padding-left:calc(24px + env(safe-area-inset-left,0px));
+    padding-right:calc(24px + env(safe-area-inset-right,0px));
+    -webkit-tap-highlight-color:transparent;
+  }
+
+  /* capa que recorta: sin ella el 404 creaba scroll lateral fantasma en el móvil */
+  .fondo{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+  /* el 404 en contorno, de fondo, desbordando — como en los carruseles */
+  .ghost{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);
+    font-family:"Clash Display","Inter",sans-serif;font-weight:700;
+    font-size:clamp(260px,44vw,760px);line-height:1;letter-spacing:-.03em;
+    color:transparent;-webkit-text-stroke:3px rgba(255,255,255,.17);
+    z-index:0;pointer-events:none;user-select:none;white-space:nowrap;
+  }
+  /* viñeta: apaga los bordes y deja respirar el centro */
+  .vineta{
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:
+      radial-gradient(120% 80% at 50% 50%, rgba(0,0,0,0) 42%, rgba(0,0,0,.80) 100%),
+      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,32,32,.13), transparent 70%);
+  }
+
+  .todo{position:relative;z-index:2;text-align:center;max-width:760px;
+        animation:sube .8s cubic-bezier(.22,.61,.36,1) both}
+  @keyframes sube{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+
+  .placa{
+    display:inline-flex;align-items:center;gap:9px;
+    border:1px solid rgba(255,255,255,.14);border-radius:999px;
+    padding:8px 18px;font-size:13.5px;color:#9ca3af;margin-bottom:30px;
+    background:rgba(0,0,0,.35);backdrop-filter:blur(6px);
+  }
+  .placa i{width:7px;height:7px;border-radius:50%;background:#ff2020;box-shadow:0 0 12px #ff2020}
+
+  h1{
+    font-family:"Clash Display","Inter",sans-serif;font-weight:500;
+    font-size:clamp(30px,6vw,62px);letter-spacing:-.03em;line-height:1.08;margin-bottom:18px;
+  }
+  h1 em{font-style:normal;color:#ff2020}
+  p{color:#9ca3af;font-size:clamp(15px,2vw,18px);line-height:1.65;max-width:28em;margin:0 auto}
+
+  .botones{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:38px}
+  a.btn{
+    display:inline-block;text-decoration:none;border-radius:999px;
+    padding:15px 30px;font-size:15px;font-weight:600;touch-action:manipulation;
+    transition:transform .18s cubic-bezier(.34,1.56,.64,1), background .25s, border-color .25s;
+  }
+  a.rojo{background:#ff2020;color:#fff;box-shadow:0 10px 34px rgba(255,32,32,.32)}
+  a.linea{border:1px solid rgba(255,255,255,.22);color:#fff;background:rgba(0,0,0,.35)}
+  /* el hover solo donde hay ratón: en el móvil se quedaba pegado tras tocar */
+  @media (hover:hover){
+    a.rojo:hover{background:#ff3838}
+    a.linea:hover{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.06)}
+  }
+  a.btn:active{transform:scale(.95)}
+
+  /* ---------- MÓVIL ---------- */
+  @media (max-width:560px){
+    body{padding:26px calc(20px + env(safe-area-inset-left,0px)) calc(26px + env(safe-area-inset-bottom,0px))}
+    /* el trazo se ve el doble de grueso cuando el 404 es pequeño: se afina */
+    .ghost{font-size:min(118vw,470px);-webkit-text-stroke-width:2px}
+    .placa{margin-bottom:24px;padding:7px 15px;font-size:12.5px}
+    h1{font-size:26px;margin-bottom:14px}
+    p{font-size:15px;line-height:1.6;max-width:23em}
+    /* apilados: en una fila no cabían y partían raro en dos líneas descuadradas */
+    .botones{flex-direction:column;flex-wrap:nowrap;align-items:center;gap:10px;margin-top:30px}
+    a.btn{width:min(100%,290px);padding:16px 24px;font-size:15.5px}
+  }
+  @media (max-width:380px){
+    h1{font-size:24px}
+    .ghost{font-size:min(122vw,400px)}
+  }
+
+  /* ---------- MÓVIL TUMBADO / VENTANA BAJITA ---------- */
+  @media (max-height:520px){
+    body{height:auto;min-height:100dvh;overflow-y:auto;padding-top:34px;padding-bottom:34px}
+    .ghost{font-size:min(88vh,420px);-webkit-text-stroke-width:2px}
+    .placa{margin-bottom:14px}
+    h1{font-size:clamp(24px,4.6vh,34px);margin-bottom:10px}
+    p{font-size:14.5px;line-height:1.55}
+    .botones{margin-top:20px}
+    a.btn{padding:13px 26px}
+  }
+
+  @media (prefers-reduced-motion:reduce){ .todo{animation:none} a.btn{transition:none} }
+</style>
+</head>
+<body>
+  <div class="fondo" aria-hidden="true"><div class="ghost">404</div></div>
+  <div class="vineta"></div>
+
+  <main class="todo">
+    <span class="placa"><i></i><span id="placa">Página no encontrada</span></span>
+    <h1 id="titular">Esta página no existe.<br><em>Tu próxima web, sí.</em></h1>
+    <p id="texto">Puede que el enlace esté mal escrito o que hayamos movido esta página.
+       Volvamos a terreno conocido.</p>
+    <div class="botones">
+      <a class="btn rojo" href="/" id="b1">Ir al inicio</a>
+      <a class="btn linea" href="/#contacto" id="b2">Hablar con Truvik</a>
+    </div>
+  </main>
+<script>
+  if ((navigator.language || "es").toLowerCase().startsWith("en")) {
+    document.documentElement.lang = "en";
+    placa.textContent = "Page not found";
+    titular.innerHTML = "This page doesn't exist.<br><em>Your next website can.</em>";
+    texto.textContent = "The link may be mistyped, or we moved this page. Let's get you back on track.";
+    b1.textContent = "Go home";
+    b2.textContent = "Talk to Truvik";
+  }
+</script>
+</body>
+</html>

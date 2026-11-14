@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com https://vik.lucas-scheil.workers.dev; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Página propia de ChatVik. Los precios y las preguntas de aquí deben
+         coincidir con src/i18n/translations.ts (productos.chatvik). -->
+    <title>ChatVik — Asistente de IA para WhatsApp en Canarias | Truvik</title>
+    <meta name="description" content="ChatVik es un asistente de IA en tu WhatsApp que responde a tus clientes 24/7, entiende notas de voz y reserva citas en tu Google Calendar. 499 €/mes. Tenerife y toda España." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://truvik.es/chatvik/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Truvik" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="https://truvik.es/chatvik/" />
+    <meta property="og:title" content="ChatVik — Asistente de IA para WhatsApp en Canarias | Truvik" />
+    <meta property="og:description" content="ChatVik es un asistente de IA en tu WhatsApp que responde a tus clientes 24/7, entiende notas de voz y reserva citas en tu Google Calendar. 499 €/mes. Tenerife y toda España." />
+    <meta property="og:image" content="https://truvik.es/chatvik-logo.png" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Icons & manifest -->
+    <link rel="icon" href="/favicon.ico?v=5" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=5" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=5" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts: Clash Display (Fontshare, licencia libre) + Inter de respaldo (SIL OFL).
+         Las DOS se sirven desde /fonts (ver src/index.css). Ni Google ni Fontshare:
+         así la IP del visitante no sale a terceros antes de aceptar nada.
+         Precargamos los pesos que se ven primero para que no parpadee el titular. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-display-700.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/clash-display-600.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://truvik.es/chatvik/#service",
+      "name": "ChatVik",
+      "serviceType": "Asistente de IA para WhatsApp",
+      "description": "ChatVik es un asistente de IA en tu WhatsApp que responde a tus clientes 24/7, entiende notas de voz y reserva citas en tu Google Calendar. 499 €/mes. Tenerife y toda España.",
+      "url": "https://truvik.es/chatvik/",
+      "image": "https://truvik.es/chatvik-logo.png",
+      "provider": {
+        "@id": "https://truvik.es/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Tenerife"
+        },
+        {
+          "@type": "Place",
+          "name": "Islas Canarias"
+        },
+        {
+          "@type": "Country",
+          "name": "España"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "499",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "499",
+          "priceCurrency": "EUR",
+          "unitCode": "MON",
+          "valueAddedTaxIncluded": false
+        }
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://truvik.es/#organization",
+      "name": "Truvik",
+      "url": "https://truvik.es/"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://truvik.es/chatvik/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta ChatVik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "499 € al mes (sin IGIC). Antes de contratar te montamos una demo gratis con los datos reales de tu negocio para que la pruebes tú mismo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tengo que cambiar mi número de WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, tu número sigue siendo el tuyo. Necesitas la app de WhatsApp Business (es gratis) y la dejas instalada como siempre: podrás seguir escribiendo tú a mano cuando quieras."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Entiende notas de voz y fotos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Entiende las notas de voz y las fotos que te mandan tus clientes, y también puede contestar con una nota de voz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué idiomas atiende?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En español, inglés y alemán. Detecta el idioma de tu cliente y le contesta en el mismo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puede reservar citas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Las apunta directamente en tu Google Calendar y le manda al cliente la cita para que la guarde en su calendario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Y si quiero contestar yo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pausas el asistente en esa conversación y sigues tú. Además solo responde con la información de tu negocio que nos das: no se inventa precios ni datos."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Truvik",
+          "item": "https://truvik.es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ChatVik",
+          "item": "https://truvik.es/chatvik/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <style>
+      .sin-js{max-width:640px;margin:0 auto;padding:48px 20px;font:16px/1.6 system-ui,sans-serif;color:#fff;background:#0a0a0a;opacity:0;animation:sin-js-aparece .3s 1.5s forwards}
+      .sin-js h1{font-size:34px;font-weight:800;letter-spacing:-.025em;line-height:1.1;margin:0 0 16px}.sin-js h2{font-size:20px;font-weight:700;margin:28px 0 8px}.sin-js ul{list-style:disc;padding-left:20px}.sin-js p{margin:0 0 8px}.sin-js dt{font-weight:700;margin-top:12px}.sin-js dd{margin:0}.sin-js strong{color:#ff2020}.sin-js a{color:#fff}
+      @keyframes sin-js-aparece{to{opacity:1}}
+    </style>
+    <script type="module" crossorigin src="/assets/index-x_QGB13B.js"></script>
+    <script type="module" crossorigin src="/assets/producto-BCPUxh4o.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CTTNYA4h.css">
+  </head>
+  <body data-producto="chatvik">
+    <div id="root">
+      <!-- Texto fijo para quien lee el HTML sin JavaScript (Gemini, ChatGPT, Bing…).
+           React lo sustituye al arrancar. Ver index.html. -->
+      <main class="sin-js">
+        <p><a href="/">Truvik</a> · Páginas web y asistentes de IA en Tenerife</p>
+        <h1>ChatVik — Asistente de IA para WhatsApp</h1>
+        
+        <p>ChatVik es un asistente de IA en tu WhatsApp que responde, resuelve dudas y reserva citas — hasta mientras duermes. Funciona en tu propio número de WhatsApp Business.</p>
+        <h2>Precio</h2>
+        <p><strong>499 € al mes</strong> (sin IGIC). Junto con CallVik: 749 €/mes en vez de 998 €. Demo gratis con los datos de tu negocio antes de contratar.</p>
+        <ul>
+          <li>Responde texto y notas de voz</li>
+          <li>Agenda citas en tu Google Calendar</li>
+          <li>Habla español, inglés y alemán</li>
+          <li>Pausas el asistente y contestas tú cuando quieras</li>
+          <li>Demo gratis con los datos de tu negocio</li>
+        </ul>
+        <h2>Preguntas frecuentes</h2>
+        <dl>
+          <dt>¿Cuánto cuesta ChatVik?</dt><dd>499 € al mes (sin IGIC). Antes de contratar te montamos una demo gratis con los datos reales de tu negocio para que la pruebes tú mismo.</dd>
+          <dt>¿Tengo que cambiar mi número de WhatsApp?</dt><dd>No, tu número sigue siendo el tuyo. Necesitas la app de WhatsApp Business (es gratis) y la dejas instalada como siempre: podrás seguir escribiendo tú a mano cuando quieras.</dd>
+          <dt>¿Entiende notas de voz y fotos?</dt><dd>Sí. Entiende las notas de voz y las fotos que te mandan tus clientes, y también puede contestar con una nota de voz.</dd>
+          <dt>¿En qué idiomas atiende?</dt><dd>En español, inglés y alemán. Detecta el idioma de tu cliente y le contesta en el mismo.</dd>
+          <dt>¿Puede reservar citas?</dt><dd>Sí. Las apunta directamente en tu Google Calendar y le manda al cliente la cita para que la guarde en su calendario.</dd>
+          <dt>¿Y si quiero contestar yo?</dt><dd>Pausas el asistente en esa conversación y sigues tú. Además solo responde con la información de tu negocio que nos das: no se inventa precios ni datos.</dd>
+        </dl>
+        <h2>Contacto</h2>
+        <p>Puerto de la Cruz, Tenerife · <a href="mailto:info.presupuesto.truvik@gmail.com">info.presupuesto.truvik@gmail.com</a></p>
+      </main>
+    </div>
+  </body>
+</html>
